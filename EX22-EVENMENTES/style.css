@@ -1,0 +1,35 @@
+/* أزرار بتصميم حديث: خلفية، ظل، تأثير hover */
+:root{
+	--bg:#ffffff;
+	--primary:#0b5fff;
+	--accent:#16a34a;
+	--muted:#f3f4f6;
+	--text:#0f172a;
+}
+body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--bg);color:var(--text);padding:32px}
+.demo{max-width:720px;margin:0 auto;text-align:right}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{appearance:none;border:0;padding:10px 16px;border-radius:10px;font-size:16px;cursor:pointer;transition:transform .18s ease, box-shadow .18s ease, background-color .12s ease}
+
+.btn.primary{
+	background:linear-gradient(180deg,var(--primary),#0847d1);
+	color:rgb(255, 255, 255);box-shadow:0 8px 20px rgba(11,95,255,0.18);
+}
+.btn.primary:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,95,255,0.22)}
+
+.btn.accent{
+	background:linear-gradient(180deg,var(--accent),#0f7c3a);
+	color:white;box-shadow:0 8px 20px rgba(22,163,74,0.16);
+}
+.btn.accent:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,163,74,0.22)}
+
+.btn.ghost{
+	background:transparent;color:var(--text);border:1px solid rgba(15,23,42,0.08);box-shadow:0 6px 16px rgba(2,6,23,0.04)
+}
+.btn.ghost:hover{background:var(--muted);transform:translateY(-2px);box-shadow:0 12px 24px rgba(2,6,23,0.06)}
+
+/* small screens */
+@media (max-width:520px){
+	.btn-row{flex-direction:column;align-items:stretch}
+	.btn{width:100%}
+}

@@ -1,0 +1,64 @@
+/* reset + simple base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        nBlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    background-color: #ffae00;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* hide the "close" button until the menu is open */
+.BBT{
+    display: none;
+} 
+
+/* sliding side panel */
+.continer { 
+  /* position: fixed; */
+    top: 0;
+    left: -220px;/* start hidden off‑screen */
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    background-color: #ffae00;
+    border-left: 5px solid #333;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+}
+
+/* when you add the class “open” from JS the panel slides in */
+.continer.open {
+    left: 0;
+}
+
+.continer p {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.continer p:hover {
+    background-color: #fff;
+} 

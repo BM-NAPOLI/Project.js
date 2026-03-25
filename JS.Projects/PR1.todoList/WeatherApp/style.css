@@ -722,6 +722,64 @@ body {
   background: rgba(99, 102, 241, 0.5);
 }
 
+/* ===== COPYRIGHT FOOTER & WATERMARK ===== */
+.site-footer {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  z-index: 20;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.45);
+}
+
+.copyright-watermark {
+  position: fixed;
+  right: 12px;
+  bottom: 80px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.06);
+  font-weight: 800;
+  letter-spacing: 6px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+  transform: rotate(-20deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .site-footer {
+    left: 16px;
+    right: 16px;
+    transform: none;
+    width: auto;
+    bottom: 12px;
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* hide watermark on smaller screens to avoid overlap */
+  .copyright-watermark {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-footer {
+    font-size: 11px;
+    padding: 6px 8px;
+    bottom: 8px;
+  }
+}
+
 .location-date {
   display: flex;
   flex-direction: column;

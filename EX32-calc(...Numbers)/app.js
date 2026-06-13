@@ -1,5 +1,5 @@
 //!
-//*  *//
+//* calc(...Numbers) *//
 //!
 
 function calc(...Numbers) {

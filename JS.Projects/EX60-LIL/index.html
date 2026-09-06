@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILYA - Parallax Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home" class="logo-text">SILYA 🪽</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#best-places" class="nav-link">Best Places</a></li>
+                <li><a href="#best-food" class="nav-link">Best Food</a></li>
+                <li><a href="#notes" class="nav-link">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Parallax Section -->
+    <section class="hero" id="home">
+        <!-- Parallax Layers -->
+        <img src="./imeges/stars1.png" id="stars1" class="parallax-layer" alt="stars">
+
+        <!-- Text Layer (Behind Moon) -->
+        <div class="text-container">
+            <h2 class="silya-text" id="silyaText">SILYA 🪽</h2>
+        </div>
+
+        <!-- Moon Layer -->
+        <img src="./imeges/moon2.png" id="moon2" class="parallax-layer moon" alt="moon">
+
+        <!-- Mountains and Landscape -->
+        <img src="./imeges/mountains3.png" id="mountains3" class="parallax-layer" alt="mountains">
+        <img src="./imeges/mountains4.png" id="mountains4" class="parallax-layer" alt="mountains">
+        <img src="./imeges/river5.png" id="river5" class="parallax-layer" alt="river">
+        <img src="./imeges/boat6.png" id="boat6" class="parallax-layer boat" alt="boat">
+        <img src="./imeges/mountains7.png" id="mountains7" class="parallax-layer" alt="mountains">
+    </section>
+
+    <!-- Best Places Section -->
+    <section class="section best-places" id="best-places">
+        <div class="container">
+            <h2 class="section-title">Best Places</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🏔️</div>
+                    <h3>Mountain Vista</h3>
+                    <p>Experience breathtaking views of majestic mountains and serene valleys. A perfect destination for
+                        nature lovers.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏖️</div>
+                    <h3>Sandy Beaches</h3>
+                    <p>Relax on pristine sandy beaches with crystal clear waters. Ideal for swimming, surfing, and beach
+                        activities.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌲</div>
+                    <h3>Forest Trail</h3>
+                    <p>Explore lush green forests with hiking trails. Discover hidden waterfalls and wildlife in their
+                        natural habitat.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏞️</div>
+                    <h3>Valley View</h3>
+                    <p>Witness stunning panoramic views of vast valleys. Perfect for photography and peaceful
+                        contemplation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Food Section -->
+    <section class="section best-food" id="best-food">
+        <div class="container">
+            <h2 class="section-title">Best Food</h2>
+            <div class="cards-grid">
+                <div class="card food-card">
+                    <div class="card-icon">🍜</div>
+                    <h3>Local Noodles</h3>
+                    <p>Authentic handmade noodles with special sauce. A traditional dish that has been perfected over
+                        generations.</p>
+                </div>
+                <div class="card food-card">
+                    <div class="card-icon">🍲</div>
+                    <h3>Seafood Soup</h3>
+                    <p>Fresh seafood in a rich aromatic broth. Loaded with premium ingredients and traditional spices.
+                    </p>
+                </div>
+                <div class="card food-card">
+                    <div class="card-icon">🥘</div>
+                    <h3>Grilled Specialties</h3>
+                    <p>Perfectly grilled meats and vegetables. Seasoned with herbs and cooked over traditional fire.</p>
+                </div>
+                <div class="card food-card">
+                    <div class="card-icon">🍱</div>
+                    <h3>Mixed Platter</h3>
+                    <p>A delightful combination of various dishes. Perfect for sharing and experiencing multiple
+                        flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section class="section notes" id="notes">
+        <div class="container">
+            <h2 class="section-title">Notes & Memories</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <div class="note-date">📅 2025</div>
+                    <h3>Adventure Begins</h3>
+                    <p>The journey started with a dream and a map. Every step was an adventure, every moment was a
+                        memory.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-date">📅 2026</div>
+                    <h3>Mountain Heights</h3>
+                    <p>Reaching the peak was more than just a physical achievement. It was a moment of spiritual
+                        connection.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-date">📅 2026</div>
+                    <h3>Sunset Stories</h3>
+                    <p>As the sun sets, new stories begin. The sky paints colors that words cannot describe.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-date">📅 2026</div>
+                    <h3>Forever Moments</h3>
+                    <p>Some moments are eternal. They become part of us, shaping who we are and what we believe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 SILYA Experience. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
